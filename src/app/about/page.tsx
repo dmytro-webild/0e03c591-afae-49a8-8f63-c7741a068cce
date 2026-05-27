@@ -4,9 +4,10 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
+import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSplitTextAbout';
+import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 
-export default function ContactPage() {
+export default function AboutUsPage() {
   const commonNavItems = [
     { name: "Home", id: "/" },
     { name: "About", id: "/about" },
@@ -39,20 +40,26 @@ export default function ContactPage() {
           />
         </div>
 
-        <div id="contact-us-main" data-section="contact-us-main">
-          <ContactSplit
-            tag="Get in Touch"
-            title="Contact Local Service Pro"
-            description="Have a question or need service? Fill out the form below or reach out using our contact details."
-            background={{ variant: "radial-gradient" }}
-            mediaPosition="left"
-            imageSrc="https://img.freepik.com/free-vector/map-pointer-vector-graphic-gps-location-pin_53876-120002.jpg?w=826&t=st=1716301662~exp=1716302262~hmac=a4e61f0a2d5e0d37e5842f654f5c22509121c7d2c3855c3c0b021d7b38d38b7e"
-            imageAlt="Google Maps location"
-            inputPlaceholder="Your Email"
-            buttonText="Send Message"
-            termsText="By sending your message, you agree to our privacy policy."
-            onSubmit={(email) => console.log(`Contact form submitted with email: ${email}`)}
+        <div id="about-us-hero" data-section="about-us-hero">
+          <InlineImageSplitTextAbout
+            heading={[
+              { type: 'text', content: 'About Us: ' },
+              { type: 'text', content: 'Your Trusted Local Service Partner' },
+            ]}
             useInvertedBackground={false}
+            ariaLabel="About Us main section"
+          />
+        </div>
+
+        <div id="our-values" data-section="our-values">
+          <SocialProofOne
+            textboxLayout="default"
+            useInvertedBackground={true}
+            names={[
+              "Integrity",              "Reliability",              "Customer Focus",              "Quality Craftsmanship",              "Community Support"]}
+            title="Our Core Values"
+            description="We are committed to upholding the highest standards of integrity, quality, and customer satisfaction in every service we provide."
+            speed={40}
           />
         </div>
 
