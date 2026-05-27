@@ -30,11 +30,7 @@ export default function LandingPage() {
       <NavbarStyleCentered
       navItems={[
         {
-          name: "Home",          id: "/"},
-        {
-          name: "Services",          id: "/services"},
-        {
-          name: "Contact",          id: "/contact"},
+          name: "Home",          id: "/"}
       ]}
       button={{
         text: "Call Now: (555) 123-4567",        href: "tel:+15551234567"}}
@@ -56,7 +52,9 @@ export default function LandingPage() {
         {
           text: "Call Now: (555) 123-4567",          href: "tel:+15551234567"},
         {
-          text: "Get Your Free Estimate",          href: "/contact"},
+          text: "Order via WhatsApp",          href: "https://wa.me/15551234567"},
+        {
+          text: "Get Your Free Estimate",          href: "/contact"}
       ]}
       imageSrc="http://img.b2bpic.net/free-photo/freight-parcel-inspiration-uniform-art_1134-1177.jpg"
       imageAlt="Professional local service technician smiling confidently"
@@ -76,7 +74,7 @@ export default function LandingPage() {
         {
           id: "m2",          value: "1200+",          description: "Happy Local Customers"},
         {
-          id: "m3",          value: "24/7",          description: "Emergency Response"},
+          id: "m3",          value: "24/7",          description: "Emergency Response"}
       ]}
       title="Building Trust, One Home at a Time"
       description="Our commitment to quality, speed, and customer satisfaction sets us apart."
@@ -137,7 +135,7 @@ export default function LandingPage() {
       leftLink={{
         text: "Call Us: (555) 123-4567",        href: "tel:+15551234567"}}
       rightLink={{
-        text: "Get a Free Quote",        href: "/contact"}}
+        text: "Chat on WhatsApp",        href: "https://wa.me/15551234567"}}
     />
   </div>
       </ReactLenis>
