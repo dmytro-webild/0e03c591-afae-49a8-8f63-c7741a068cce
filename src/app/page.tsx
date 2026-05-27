@@ -30,26 +30,16 @@ export default function LandingPage() {
       <NavbarStyleCentered
       navItems={[
         {
-          name: "Home",
-          id: "/",
-        },
+          name: "Home",          id: "/"},
         {
-          name: "Services",
-          id: "/services",
-        },
+          name: "Services",          id: "/services"},
         {
-          name: "Contact",
-          id: "/contact",
-        },
+          name: "Contact",          id: "/contact"},
       ]}
       button={{
-        text: "Call Now: (555) 123-4567",
-        href: "tel:+15551234567",
-      }}
+        text: "Call Now: (555) 123-4567",        href: "tel:+15551234567"}}
       topBarButton={{
-        text: "Get Free Quote",
-        href: "/contact",
-      }}
+        text: "Get Free Quote",        href: "/contact"}}
       logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=19o82j"
       logoAlt="Local Service Pro Logo"
       brandName="Local Service Pro"
@@ -59,19 +49,14 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroLogoBillboard
       background={{
-        variant: "radial-gradient",
-      }}
+        variant: "radial-gradient"}}
       logoText="Local Service Pro"
       description="Fast & Reliable Local Service You Can Trust. Licensed, Insured, and 5-Star Rated."
       buttons={[
         {
-          text: "Call Now: (555) 123-4567",
-          href: "tel:+15551234567",
-        },
+          text: "Call Now: (555) 123-4567",          href: "tel:+15551234567"},
         {
-          text: "Get Your Free Estimate",
-          href: "/contact",
-        },
+          text: "Get Your Free Estimate",          href: "/contact"},
       ]}
       imageSrc="http://img.b2bpic.net/free-photo/freight-parcel-inspiration-uniform-art_1134-1177.jpg"
       imageAlt="Professional local service technician smiling confidently"
@@ -87,20 +72,11 @@ export default function LandingPage() {
       useInvertedBackground={false}
       metrics={[
         {
-          id: "m1",
-          value: "4.9/5",
-          description: "Average Google Rating",
-        },
+          id: "m1",          value: "4.9/5",          description: "Average Google Rating"},
         {
-          id: "m2",
-          value: "1200+",
-          description: "Happy Local Customers",
-        },
+          id: "m2",          value: "1200+",          description: "Happy Local Customers"},
         {
-          id: "m3",
-          value: "24/7",
-          description: "Emergency Response",
-        },
+          id: "m3",          value: "24/7",          description: "Emergency Response"},
       ]}
       title="Building Trust, One Home at a Time"
       description="Our commitment to quality, speed, and customer satisfaction sets us apart."
@@ -127,14 +103,7 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       names={[
-        "Springfield",
-        "Capital City",
-        "Oakwood",
-        "Riverside",
-        "Northville",
-        "Westbrook",
-        "Sunnyside",
-      ]}
+        "Springfield",        "Capital City",        "Oakwood",        "Riverside",        "Northville",        "Westbrook",        "Sunnyside"]}
       title="Serving Our Local Community"
       description="Proudly providing exceptional service across [Your City] and all surrounding areas. Contact us to see if we serve your neighborhood!"
       speed={40}
@@ -146,6 +115,17 @@ export default function LandingPage() {
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
+      gridVariant="four-items-2x2-equal-grid" 
+      title="Why Choose Our Services" 
+      description="Committed to excellence, transparency, and customer satisfaction." 
+      features={[
+        {
+          title: "Expert Technicians",          description: "Our team consists of highly trained and certified professionals.",          imageSrc: "http://img.b2bpic.net/free-photo/cheerful-workman-white-wall_23-2147772246.jpg",          imageAlt: "Cheerful workman at white wall",          titleImageSrc: "http://img.b2bpic.net/free-photo/happy-auto-repairman-pulling-rack-with-car-tires-looking-camera-workshop_637285-7542.jpg",          buttonText: "Meet Our Team",          buttonHref: "/about"
+        },
+        {
+          title: "Transparent Pricing",          description: "No hidden fees, just upfront and honest quotes.",          imageSrc: "http://img.b2bpic.net/free-photo/happy-foreman-auto-mechanic-workshop-using-touchpad-looking-camera_637285-9410.jpg",          imageAlt: "Happy foreman auto mechanic workshop",          titleImageSrc: "http://img.b2bpic.net/free-photo/crazy-dealer-happy-expression_1194-3988.jpg",          buttonText: "View Pricing",          buttonHref: "/services"
+        }
+      ]}
     />
   </div>
 
@@ -155,13 +135,9 @@ export default function LandingPage() {
       logoAlt="Local Service Pro Logo"
       logoText="Local Service Pro"
       leftLink={{
-        text: "Call Us: (555) 123-4567",
-        href: "tel:+15551234567",
-      }}
+        text: "Call Us: (555) 123-4567",        href: "tel:+15551234567"}}
       rightLink={{
-        text: "Get a Free Quote",
-        href: "/contact",
-      }}
+        text: "Get a Free Quote",        href: "/contact"}}
     />
   </div>
       </ReactLenis>

@@ -26,26 +26,16 @@ export default function LandingPage() {
       <NavbarStyleCentered
       navItems={[
         {
-          name: "Home",
-          id: "/",
-        },
+          name: "Home",          id: "/"},
         {
-          name: "Services",
-          id: "/services",
-        },
+          name: "Services",          id: "/services"},
         {
-          name: "Contact",
-          id: "/contact",
-        },
+          name: "Contact",          id: "/contact"},
       ]}
       button={{
-        text: "Call Now: (555) 123-4567",
-        href: "tel:+15551234567",
-      }}
+        text: "Call Now: (555) 123-4567",        href: "tel:+15551234567"}}
       topBarButton={{
-        text: "Get Free Quote",
-        href: "/contact",
-      }}
+        text: "Get Free Quote",        href: "/contact"}}
       logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=19o82j"
       logoAlt="Local Service Pro Logo"
       brandName="Local Service Pro"
@@ -59,38 +49,20 @@ export default function LandingPage() {
       description="Ready to experience fast, reliable local service? Fill out the form below or call us directly."
       inputs={[
         {
-          name: "name",
-          type: "text",
-          placeholder: "Your Name",
-          required: true,
+          name: "name",          type: "text",          placeholder: "Your Name",          required: true,
         },
         {
-          name: "phone",
-          type: "tel",
-          placeholder: "Phone Number",
-          required: true,
+          name: "phone",          type: "tel",          placeholder: "Phone Number",          required: true,
         },
         {
-          name: "email",
-          type: "email",
-          placeholder: "Email Address (Optional)",
-        },
+          name: "email",          type: "email",          placeholder: "Email Address (Optional)"},
       ]}
       multiSelect={{
-        name: "serviceNeeded",
-        label: "Service Needed",
-        options: [
-          "Plumbing",
-          "Electrical",
-          "HVAC",
-          "Carpentry",
-          "Other",
-        ],
+        name: "serviceNeeded",        label: "Service Needed",        options: [
+          "Plumbing",          "Electrical",          "HVAC",          "Carpentry",          "Other"],
       }}
       textarea={{
-        name: "message",
-        placeholder: "Tell us about your service needs...",
-        rows: 4,
+        name: "message",        placeholder: "Tell us about your service needs...",        rows: 4,
       }}
       imageSrc="http://img.b2bpic.net/free-photo/joyful-young-bald-call-center-man-wearing-headset-sitting-desk-with-work-tools-looking-laptop-showing-thumb-up-isolated-purple_141793-84110.jpg"
       imageAlt="Friendly customer service representative at a local business"
@@ -108,10 +80,10 @@ export default function LandingPage() {
       description="For urgent service requests or to speak directly with an expert, our lines are open 24/7. We're ready when you are."
       buttons={[
         {
-          text: "Call Now: (555) 123-4567",
-          href: "tel:+15551234567",
-        },
+          text: "Call Now: (555) 123-4567",          href: "tel:+15551234567"},
       ]}
+      features={[]} 
+      animationType="slide-up" 
     />
   </div>
 
@@ -121,13 +93,9 @@ export default function LandingPage() {
       logoAlt="Local Service Pro Logo"
       logoText="Local Service Pro"
       leftLink={{
-        text: "Call Us: (555) 123-4567",
-        href: "tel:+15551234567",
-      }}
+        text: "Call Us: (555) 123-4567",        href: "tel:+15551234567"}}
       rightLink={{
-        text: "Get a Free Quote",
-        href: "/contact",
-      }}
+        text: "Get a Free Quote",        href: "/contact"}}
     />
   </div>
       </ReactLenis>
