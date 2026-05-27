@@ -120,10 +120,10 @@ export default function LandingPage() {
       description="Committed to excellence, transparency, and customer satisfaction." 
       features={[
         {
-          title: "Expert Technicians",          description: "Our team consists of highly trained and certified professionals.",          imageSrc: "http://img.b2bpic.net/free-photo/cheerful-workman-white-wall_23-2147772246.jpg",          imageAlt: "Cheerful workman at white wall",          titleImageSrc: "http://img.b2bpic.net/free-photo/happy-auto-repairman-pulling-rack-with-car-tires-looking-camera-workshop_637285-7542.jpg",          buttonText: "Meet Our Team",          buttonHref: "/about"
+          title: "Expert Technicians",          imageSrc: "http://img.b2bpic.net/free-photo/cheerful-workman-white-wall_23-2147772246.jpg",          imageAlt: "Cheerful workman at white wall",          titleImageSrc: "http://img.b2bpic.net/free-photo/happy-auto-repairman-pulling-rack-with-car-tires-looking-camera-workshop_637285-7542.jpg",          buttonText: "Meet Our Team",          buttonHref: "/about"
         },
         {
-          title: "Transparent Pricing",          description: "No hidden fees, just upfront and honest quotes.",          imageSrc: "http://img.b2bpic.net/free-photo/happy-foreman-auto-mechanic-workshop-using-touchpad-looking-camera_637285-9410.jpg",          imageAlt: "Happy foreman auto mechanic workshop",          titleImageSrc: "http://img.b2bpic.net/free-photo/crazy-dealer-happy-expression_1194-3988.jpg",          buttonText: "View Pricing",          buttonHref: "/services"
+          title: "Transparent Pricing",          imageSrc: "http://img.b2bpic.net/free-photo/happy-foreman-auto-mechanic-workshop-using-touchpad-looking-camera_637285-9410.jpg",          imageAlt: "Happy foreman auto mechanic workshop",          titleImageSrc: "http://img.b2bpic.net/free-photo/crazy-dealer-happy-expression_1194-3988.jpg",          buttonText: "View Pricing",          buttonHref: "/services"
         }
       ]}
     />
