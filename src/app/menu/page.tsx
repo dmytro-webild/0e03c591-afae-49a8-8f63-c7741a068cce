@@ -66,8 +66,6 @@ export default function MenuPage() {
         <div id="food-gallery" data-section="food-gallery">
           <ProductCatalog
             layout="page"
-            title="Our Culinary Delights"
-            description="From appetizers to desserts, discover a world of flavors."
             products={menuItems}
             searchPlaceholder="Search your favorite dish..."
             emptyMessage="No menu items found. Please adjust your search or filters."
