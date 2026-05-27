@@ -7,8 +7,9 @@ import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 
 export default function ContactPage() {
-  const commonNavItems = [
+  const restaurantNavItems = [
     { name: "Home", id: "/" },
+    { name: "Menu", id: "/menu" },
     { name: "About", id: "/about" },
     { name: "Services", id: "/services" },
     { name: "Contact", id: "/contact" },
@@ -30,27 +31,27 @@ export default function ContactPage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
           <NavbarStyleCentered
-            navItems={commonNavItems}
+            navItems={restaurantNavItems}
             button={{ text: "Call Now: (555) 123-4567", href: "tel:+15551234567" }}
-            topBarButton={{ text: "Get Free Quote", href: "/contact" }}
+            topBarButton={{ text: "Make a Reservation", href: "/contact" }}
             logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=19o82j"
-            logoAlt="Local Service Pro Logo"
-            brandName="Local Service Pro"
+            logoAlt="Grand Cuisine Logo"
+            brandName="Grand Cuisine"
           />
         </div>
 
         <div id="contact-us-main" data-section="contact-us-main">
           <ContactSplit
-            tag="Get in Touch"
-            title="Contact Local Service Pro"
-            description="Have a question or need service? Fill out the form below or reach out using our contact details."
+            tag="Reserve Your Table"
+            title="Contact Grand Cuisine"
+            description="Have a question or want to make a reservation? Fill out the form below or reach out to us directly."
             background={{ variant: "radial-gradient" }}
             mediaPosition="left"
-            imageSrc="https://img.freepik.com/free-vector/map-pointer-vector-graphic-gps-location-pin_53876-120002.jpg?w=826&t=st=1716301662~exp=1716302262~hmac=a4e61f0a2d5e0d37e5842f654f5c22509121c7d2c3855c3c0b021d7b38d38b7e"
-            imageAlt="Google Maps location"
-            inputPlaceholder="Your Email"
-            buttonText="Send Message"
-            termsText="By sending your message, you agree to our privacy policy."
+            imageSrc="https://images.unsplash.com/photo-1555547466-9b56f912e753?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            imageAlt="Restaurant ambiance"
+            inputPlaceholder="Your Email for Reservation"
+            buttonText="Submit Reservation"
+            termsText="By submitting, you agree to our reservation terms and privacy policy."
             onSubmit={(email) => console.log(`Contact form submitted with email: ${email}`)}
             useInvertedBackground={false}
           />
@@ -59,10 +60,10 @@ export default function ContactPage() {
         <div id="footer" data-section="footer">
           <FooterLogoReveal
             logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=19o82j"
-            logoAlt="Local Service Pro Logo"
-            logoText="Local Service Pro"
+            logoAlt="Grand Cuisine Logo"
+            logoText="Grand Cuisine"
             leftLink={{ text: "Call Us: (555) 123-4567", href: "tel:+15551234567" }}
-            rightLink={{ text: "Get a Free Quote", href: "/contact" }}
+            rightLink={{ text: "Make a Reservation", href: "/contact" }}
           />
         </div>
       </ReactLenis>

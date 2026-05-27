@@ -8,8 +8,9 @@ import InlineImageSplitTextAbout from '@/components/sections/about/InlineImageSp
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 
 export default function AboutUsPage() {
-  const commonNavItems = [
+  const restaurantNavItems = [
     { name: "Home", id: "/" },
+    { name: "Menu", id: "/menu" },
     { name: "About", id: "/about" },
     { name: "Services", id: "/services" },
     { name: "Contact", id: "/contact" },
@@ -31,20 +32,20 @@ export default function AboutUsPage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
           <NavbarStyleCentered
-            navItems={commonNavItems}
+            navItems={restaurantNavItems}
             button={{ text: "Call Now: (555) 123-4567", href: "tel:+15551234567" }}
-            topBarButton={{ text: "Get Free Quote", href: "/contact" }}
+            topBarButton={{ text: "Make a Reservation", href: "/contact" }}
             logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=19o82j"
-            logoAlt="Local Service Pro Logo"
-            brandName="Local Service Pro"
+            logoAlt="Grand Cuisine Logo"
+            brandName="Grand Cuisine"
           />
         </div>
 
-        <div id="about-us-hero" data-section="about-us-hero">
+        <div id="hero-about" data-section="hero-about">
           <InlineImageSplitTextAbout
             heading={[
-              { type: 'text', content: 'About Us: ' },
-              { type: 'text', content: 'Your Trusted Local Service Partner' },
+              { type: 'text', content: 'Our Story: ' },
+              { type: 'text', content: 'The Heart of Grand Cuisine' },
             ]}
             useInvertedBackground={false}
             ariaLabel="About Us main section"
@@ -56,9 +57,9 @@ export default function AboutUsPage() {
             textboxLayout="default"
             useInvertedBackground={true}
             names={[
-              "Integrity",              "Reliability",              "Customer Focus",              "Quality Craftsmanship",              "Community Support"]}
-            title="Our Core Values"
-            description="We are committed to upholding the highest standards of integrity, quality, and customer satisfaction in every service we provide."
+              "Exquisite Flavors",              "Impeccable Service",              "Freshness",              "Innovation",              "Customer Delight"]}
+            title="Our Culinary Philosophy"
+            description="We are dedicated to crafting unforgettable dining experiences through exceptional taste, quality, and service."
             speed={40}
           />
         </div>
@@ -66,10 +67,10 @@ export default function AboutUsPage() {
         <div id="footer" data-section="footer">
           <FooterLogoReveal
             logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=19o82j"
-            logoAlt="Local Service Pro Logo"
-            logoText="Local Service Pro"
+            logoAlt="Grand Cuisine Logo"
+            logoText="Grand Cuisine"
             leftLink={{ text: "Call Us: (555) 123-4567", href: "tel:+15551234567" }}
-            rightLink={{ text: "Get a Free Quote", href: "/contact" }}
+            rightLink={{ text: "Make a Reservation", href: "/contact" }}
           />
         </div>
       </ReactLenis>
