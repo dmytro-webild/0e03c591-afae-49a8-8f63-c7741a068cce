@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import FeatureCardTwentyThree from '@/components/sections/feature/FeatureCardTwentyThree';
+import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 import HeroLogoBillboard from '@/components/sections/hero/HeroLogoBillboard';
 import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
@@ -111,7 +111,7 @@ export default function LandingPage() {
   </div>
 
   <div id="feature" data-section="feature">
-      <FeatureCardTwentyThree
+      <FeatureCardTwentyNine
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
